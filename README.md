@@ -6,3 +6,20 @@ The goal is isolating through-going muons that will provide a way to study data 
 
 With such metrics in hand, hopefully we can begin the path towards data/mc agreement that will lead to better network performances on data.
 
+## Dependencies
+
+* numpy
+* ROOT
+* LArCV
+* larlite/larsoft eventually when dealing with MC and reco. parameters
+
+
+## Setup
+
+Going to build this as a submodule of LArCV, to be located in the app folder of LArCV.
+
+First, get a copy of LArCV, set it up and build it.
+
+Next clone this repository in the LArCV/app folder.
+
+Then build it. (Nothing in it right now)
