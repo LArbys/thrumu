@@ -19,7 +19,8 @@
 
 #include <vector>
 #include <string>
-#include "BoundaryMatchArrays.h"
+
+#include "BoundaryMuonTaggerAlgo.h"
 
 namespace larcv {
 
@@ -48,12 +49,10 @@ namespace larcv {
 
   protected:
 
-    boundaryalgo::BoundaryMatchArrays m_matches;
     std::string fInputImageProducer;
-    int fNeighborhood;
-    std::vector<int> fThreshold;
     bool fSaveMatchImage;
     std::string fOutputMatchedPixelImage;
+    boundaryalgo::BoundaryMuonTaggerAlgo _algo;
 
   };
 
